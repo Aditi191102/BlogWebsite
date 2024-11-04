@@ -15,9 +15,9 @@ function Blogs(){
                     <p> By <span>{post.author}</span> on <span>{post.category}</span></p>
                     <p>Posted on {post.date}</p>
                     <p>{post.content}</p>
-                    <div>
+                    {/* <div>
                         <img src={post.img} alt={post.category + " "+ "image"}></img>
-                    </div>
+                    </div> */}
                 </div>
             )
         )

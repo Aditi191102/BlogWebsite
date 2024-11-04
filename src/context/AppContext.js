@@ -26,6 +26,10 @@ export default function AppContextProvider({children}) {
         setLoading(false);
     }
 
+        function handlePageChange(page){
+            setPages(page)
+            fetchBlog(page)
+        }
 
     const value = {
         posts,
@@ -36,7 +40,8 @@ export default function AppContextProvider({children}) {
         setPages,
         totalPages,
         setTotalPages,
-        fetchBlog
+        fetchBlog,
+        handlePageChange
     };
 
     return <AppContext.Provider value={value}>
